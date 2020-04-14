@@ -1,0 +1,127 @@
+/* Available font-weight: 300/400/600 */
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    background-color: #FFFFFF;
+}
+/* Presentation */
+#presentation-image{
+    position: absolute;
+    z-index: -2;
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('../images/beatles-background.jpg');
+    opacity: 0.9;
+}
+#presentation-overlay{
+    position: absolute;
+    z-index: -1;
+    height: 100vh;
+    width: 100%;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(15,2,40,0.5648634453781513) 39%, rgba(155,8,54,0.46122198879551823) 67%, rgba(155,8,54,0.6601015406162465) 100%);
+}
+.navbar{
+    position: relative;
+    z-index: 1;
+}
+.navbar-brand{
+    font-weight: 600;
+}
+.active{
+    font-weight: 400;
+}
+.presentation-main{
+    margin-top: 17vh;
+    margin-left: 10vw;
+ }
+ .title{
+    font-weight: 600;
+    font-size: calc(2.9em + 1vw);
+    color: #FFFFFF;
+    max-width: 750px;
+ }
+ .presentation-main p{
+    max-width: 614px;
+    font-size: calc(0.3em + 1vw);
+    font-weight: 300;
+    color: #FFFFFF;
+ }
+ .button-custom1{
+    margin-top: 15px;
+    border-color: rgb(233, 78, 57);
+    background-color: transparent;
+    color: #FFFFFF;
+    width: 13vw;
+    min-width: 120px;
+    margin-right: 35px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 15px;
+ }
+ .button-custom1:hover{
+    background-color: rgb(128, 27, 13);
+ }
+ .button-custom2{
+    margin-top: 15px;
+    border-color: #FFFFFF;
+    background-color: transparent;
+    color: #FFFFFF;
+    width: 17vw;
+    min-width: 140px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 15px;
+ }
+ .button-custom2:hover{
+    background-color: rgb(29, 29, 29);
+ }
+ a{
+    text-decoration: none;
+    color: #FFFFFF;
+ }
+a:hover{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+p::before{
+    margin-top: 5px;
+}
+p::after{
+    margin-bottom: 5px;
+}
+ @media screen and (max-width: 991px){
+    .presentation-main p{
+       font-size: calc(0.3em + 2vw)
+    }
+ }
+ /* Biography */
+ .container-custom{
+     margin-top: 70px;
+ }
+ .biography-text{
+    text-align: center;
+ }
+ .title-biography{
+    font-weight: 600;    
+    font-size: calc(2.9em + 1vw);
+    color: #343A40;
+ }
+ h4{
+     padding-top: 20px;
+ }
+ footer{
+    margin-top: 28vh;
+    font-weight: 600;
+    text-align: center;
+    height:120px;
+    color: white;
+    background-color: #343A40;
+ }
+ footer a{
+    margin-left: 10px;
+    margin-right: 10px;
+    text-decoration: underline;
+ }
